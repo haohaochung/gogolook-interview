@@ -27,6 +27,6 @@ driver.find_element(By.ID, "myName").click()
 driver.find_element(By.XPATH, '//*[@id="global_bk"]/ul/li[2]/ul/li[4]/ul/li/div/dl/dt[1]/a').click()
 
 # member center page
-time.sleep(5)
+WebDriverWait(driver=driver, timeout=10).until(EC.new_window_is_opened)
 driver.find_element(By.XPATH, '//*[@id="global_bk"]/ul/li[2]/ul/li[5]/a').click()
-
+time.sleep(3)
